@@ -1,0 +1,37 @@
+
+applications:
+  - appName: "argocd"
+    enabled: true
+    hostname: "prod-argocd.asadali.ie"
+    namespace: "argocd"
+    ingressClass: "nginx"
+    backendService: "argocd-server"
+    backendPort: 80
+    tlsEnabled : false
+
+  - appName: "grafana"
+    enabled: true
+    hostname: "grafana.asadali.ie"
+    namespace: "prometheus"
+    ingressClass: "nginx"
+    backendService: "grafana"
+    backendPort: 80
+    tlsEnabled : false
+
+  - appName: "prometheus"
+    enabled: true
+    hostname: "prometheus.asadali.ie"
+    namespace: "prometheus"
+    ingressClass: "nginx"
+    backendService: "prometheus-server"
+    backendPort: 80
+    tlsEnabled : false
+
+  - appName: "wishlist"
+    enabled: true
+    hostname: "wishlist.asadali.ie"
+    namespace: "apps"
+    ingressClass: "nginx"
+    backendService: javademo"
+    backendPort: 8181
+    tlsEnabled : false

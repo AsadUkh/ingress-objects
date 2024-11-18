@@ -1,0 +1,5 @@
+apiVersion: v2
+name: ingress-objects
+description: A Helm chart for deploying an Ingress resource with customizable parameters
+version: 0.1.0
+appVersion: "1.0.0"
